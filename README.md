@@ -31,3 +31,21 @@ Handles animation delay so switch click is visible before the card disappears
 ExtensionCard — presentational component
 
 ThemeButton — toggles theme; theme is applied globally via data-theme on <body>
+
+
+#How to run the project
+
+1. Open the project folder in the terminal
+
+2. Install dependencies: 
+
+npm install
+
+3. Start the development server:
+
+npm run dev
+
+
+4. Open the app in your browser:
+
+Use the link shown in the terminal (for example: http://localhost:5173/)
