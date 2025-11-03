@@ -1,0 +1,35 @@
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #040918 0%, #091540 100%);
+}
+
+:root {
+  --bg: linear-gradient(180deg, #040918 0%, #091540 100%);
+  --text: #fff;
+  --bgcard: #1f2535;
+  --cardnamecolor: #fff;
+  --bgbutton: rgb(47, 53, 75);
+  --removeborder: 1px solid #fff;
+}
+
+[data-theme="light"] {
+  --bg: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
+  --text: hsl(229, 73%, 15%);
+  --bgcard: hsl(220, 100%, 99%);
+  --cardnamecolor: hsl(232, 66%, 14%);
+  --bgbutton: #fff;
+  --removeborder: 1px solid hsl(232, 66%, 14%);
+  --cardshadow: 4px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+body {
+  background: var(--bg);
+}

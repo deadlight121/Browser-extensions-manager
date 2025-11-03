@@ -1,0 +1,26 @@
+button {
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin: 0 10px;
+  background-color: var(--bgbutton);
+  border: none;
+  color: var(--text);
+  font-size: 18px;
+  transition: all 0.3s ease;
+  transition: all 0.35s ease;
+}
+
+button:hover {
+  background-color: hsl(226, 11%, 37%);
+}
+
+.activeButton {
+  background-color: hsl(3, 71%, 56%);
+  color: hsl(227, 74%, 7%);
+  transition: all 0.15s ease;
+}
+
+.activeButton:hover {
+  background-color: hsl(3, 71%, 56%);
+  color: hsl(227, 74%, 7%);
+}

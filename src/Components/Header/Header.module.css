@@ -1,0 +1,38 @@
+header {
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bgcard);
+  align-items: center;
+  height: 50px;
+  color: var(--cardnamecolor);
+}
+
+.headerLeft {
+  height: 100%;
+  display: flex;
+  color: var(--cardnamecolor);
+  align-items: center;
+  gap: 15px;
+}
+
+.headerRight {
+  background-color: rgb(47, 53, 75);
+  display: flex;
+  height: 70%;
+  width: 3%;
+  border-radius: 10px;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerRight img {
+  height: 60%;
+  width: auto;
+}
+
+img {
+  height: 100%;
+}

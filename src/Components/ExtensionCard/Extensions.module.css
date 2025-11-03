@@ -1,0 +1,110 @@
+.card {
+  color: var(--cardnamecolor);
+  background-color: var(--bgcard);
+  border-radius: 15px;
+  padding: 15px;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--cardshadow);
+  border: var(--cardborder);
+}
+
+.cardText h2 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.cardText p {
+  margin-top: 0;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.textAndImg {
+  display: flex;
+  padding-bottom: 20px;
+}
+.textAndImg img {
+  height: 50px;
+  padding-top: 5px;
+  margin-right: 15px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.remove {
+  background-color: var(--bgbutton);
+  border: var(--removeborder);
+  border-radius: 50px;
+  transition: all 0.5s ease;
+}
+
+.remove:hover {
+  background-color: hsl(3, 71%, 56%);
+  color: hsl(227, 74%, 7%);
+  border: 1px solid hsl(3, 71%, 56%);
+}
+
+.toggle {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  display: inline-block;
+}
+.toggle input {
+  display: none;
+}
+
+.toggle span {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  background: #3a4158;
+  transition: background 0.18s ease;
+}
+
+.toggle span::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  transition: transform 0.18s ease;
+}
+
+/* включено */
+.toggle input:checked + span {
+  background: hsl(3, 71%, 56%);
+}
+.toggle input:checked + span::after {
+  transform: translateX(20px);
+}
+
+@media (max-width: 900px) {
+  .sectionContainer {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 12px;
+    padding: 0 20px;
+  }
+
+  .card {
+    padding: 8px;
+  }
+
+  .cardText h2 {
+    font-size: 18px;
+  }
+
+  .cardText p {
+    font-size: 14px;
+  }
+}
